@@ -9,10 +9,175 @@
     
 */
 
+/* 
+    Typical Devices BreakPoints:
+
+    Mobile – 360 x 640; 375 x 667; 360 x 720.
+    Tablet – 768 x 1024.
+    iPhone – 375 x 812.
+    Laptop – 1366 x 768.
+    Desktop or high-resolution laptop – 1920 x 1080.
+
+*/
 
 
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: gray;
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    main {
+        position: relative;
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body {
+        background-color: #5f2c82
+        ;
+    }
+
+    div {
+        margin: auto;
+    }
+
+    #login {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: white;
+        overflow: hidden;
+
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 45%);;
+
+        width: 250px;
+        height: 515px;
+        margin-bottom: 110px;
+        border-radius: 10px;
+
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+    }
+
+    #imagem {
+        background-image: url('../imagens/pexels-hilal-bülbül-12987114.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 200px;
+    }
+
+    #formulario {
+        background-color: white;
+        padding: 10px;
+    }
+
+    #formulario h1 {
+        text-align: center;
+    }
+
+    #formulario p {
+        margin-top: 10px;
+
+        font-size: 13px;
+    }
+
+    .dados {
+        position: relative;
+
+        width: 100%;
+        height: 40px;
+
+        
+        margin: 10px 0px;
+        border-radius: 8px;
+        background-color: #5f2c82;
+        box-shadow: 1px 1px 3px #602c82c0;
+    }
+
+    input {
+        height: 93%;
+        border-radius: 8px;
+        
+        position: absolute;
+        background-color: #94cfcd;
+        
+        border: 1px solid black;
+        box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.664);
+
+        padding-left: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    span {
+        
+        text-align: center;
+        color: white;
+
+        margin-top: 7px;
+        margin-right: 3.2px;
+        width: 65px;
+    }
+
+    #ientrar {
+
+        width: 100%;
+        height: 40px;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+
+        background-color: #53aaa7;
+        color: white;
+
+        cursor: pointer;
+    }
+
+    #ientrar:hover {
+        background-color: #2d6462;
+    }
+
+    .esquecisenha {
+        display: block;
+
+        width: 100%;
+        height: 40px;
+
+        border-radius: 8px;
+
+        text-align: center;
+        font-size: 1.1em;
+
+        border: 1px solid #49a09d;
+
+        background-color: white;
+    }
+
+    .esquecisenha span {
+        color: #2d6462;
+        width: 10px;
+        
+    }
+
+    a {
+
+        display: block;
+        margin-top: -5px;
+
+        text-decoration: none;
+        color: #2d6462;
+    }
 }
