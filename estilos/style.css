@@ -107,12 +107,15 @@ body {
     }
 
     input {
-        height: 93%;
+        
+        height: 95%;
+        width: 34.4vw;
         border-radius: 8px;
         
         position: absolute;
         background-color: #94cfcd;
-        
+
+
         border: 1px solid black;
         box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.664);
 
