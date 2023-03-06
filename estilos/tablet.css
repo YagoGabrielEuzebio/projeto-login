@@ -1,6 +1,15 @@
 @charset 'UTF-8';
 
 /* 
+
+    Paleta de cores:
+
+    Verde: #49a09d
+    Lilas: #5f2c82
+    
+*/
+
+/* 
     Typical Devices BreakPoints:
 
     Mobile – 360 x 640; 375 x 667; 360 x 720.
@@ -11,6 +20,179 @@
 
 */
 
-@media screen and (min-width: 768px) {
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width:995px) {
     
+    main {
+        position: relative;
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    #login {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: white;
+        overflow: hidden;
+
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 45%);;
+
+        width: 80vw;
+        height: 330px;
+        margin-bottom: 110px;
+        border-radius: 10px;
+
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+    }
+
+    #imagem {
+        background-image: url('../imagens/pexels-hilal-bülbül-12987114.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        display: block;
+
+        float: left;
+        
+        margin-right: 10px;
+
+        height: 70vh;
+        width: 37%;
+    }
+
+    #formulario {
+        display: block;
+
+        text-align: center;
+        padding: 10px;
+    }
+
+    #formulario p {
+        text-align: justify;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        font-size: 13px;
+    }
+
+    .dados {        
+        display: flex;
+
+        width: 61%;
+        height: 40px;
+
+        margin: 5px 0px;
+
+        border-radius: 8px;
+        background-color: #5f2c82;
+        box-shadow: 1px 1px 3px #602c82c0;
+    }
+
+    #isenha, #imail {
+
+        right: 17px;
+
+        height: 11.4%;
+        width: 49%;
+        border-radius: 8px;
+
+        position: absolute;
+        background-color: #94cfcd;
+
+        margin-left: 60px;
+
+        border: 1px solid black;
+        box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.664);
+
+        padding-left: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    span {
+        
+        text-align: left;
+        color: white;
+
+        margin-top: 7px;
+        margin-left: 20px;
+        width: 50px;
+    }
+
+    #ientrar {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 20px;
+        width: 61%;
+        height: 40px;
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.664);
+
+        background-color: #53aaa7;
+        color: white;
+
+        cursor: pointer;
+    }
+
+    #ientrar:hover {
+        background-color: #2d6462;
+    }
+
+    .esquecisenha{
+            
+        display: flex;
+        justify-content: center;
+
+        margin-top: 10px;
+        width: 61%;
+        height: 40px;
+
+        border-radius: 8px;
+
+        text-align: center;
+        font-size: 1.1em;
+
+        border: 1px solid #49a09d;
+
+     
+    }
+
+    .esquecisenha span {
+        color: #2d6462;
+        width: 10px;
+        
+    }
+
+    a {
+
+        display: block;
+        margin-top: -5px;
+
+        text-decoration: none;
+        color: #2d6462;
+    }
 }

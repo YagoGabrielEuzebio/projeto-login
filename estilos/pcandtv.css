@@ -9,17 +9,6 @@
     
 */
 
-/* 
-    Typical Devices BreakPoints:
-
-    Mobile – 360 x 640; 375 x 667; 360 x 720.
-    Tablet – 768 x 1024.
-    iPhone – 375 x 812.
-    Laptop – 1366 x 768.
-    Desktop or high-resolution laptop – 1920 x 1080.
-
-*/
-
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +16,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     
     main {
         position: relative;
@@ -37,12 +26,7 @@
     }
 
     body {
-        background-color: #5f2c82
-        ;
-    }
-
-    div {
-        margin: auto;
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     #login {
@@ -56,8 +40,8 @@
 
         box-shadow: 0px 0px 10px rgb(0 0 0 / 45%);;
 
-        width: 250px;
-        height: 515px;
+        width: 80vw;
+        height: 360px;
         margin-bottom: 110px;
         border-radius: 10px;
 
@@ -70,49 +54,61 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 200px;
+
+        display: block;
+
+        float: right;
+        
+        margin-left: 10px;
+
+        height: 70vh;
+        width: 50%;
     }
 
     #formulario {
-        background-color: white;
+        display: block;
+
+        text-align: center;
         padding: 10px;
     }
 
-    #formulario h1 {
-        text-align: center;
-    }
-
     #formulario p {
+        text-align: justify;
+
         margin-top: 10px;
+        margin-bottom: 30px;
 
         font-size: 13px;
     }
 
-    .dados {
-        position: relative;
+    .dados {        
+        display: flex;
 
-        width: 100%;
+        width: 48%;
         height: 40px;
 
-        
-        margin: 10px 0px;
+        margin: 5px 0px;
+        margin-bottom: 13px;
+
         border-radius: 8px;
         background-color: #5f2c82;
         box-shadow: 1px 1px 3px #602c82c0;
     }
 
     #isenha, #imail {
-        right: 0px;
 
-        height: 95%;
-        width: 70%;
+        right: 52%;
+
+        height: 10.6%;
+        width: 38%;
         border-radius: 8px;
 
+        
         position: absolute;
         background-color: #94cfcd;
 
         margin-left: 60px;
-
+        
         border: 1px solid black;
         box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.664);
 
@@ -123,21 +119,20 @@
 
     span {
         
-        text-align: center;
+        text-align: left;
         color: white;
 
         margin-top: 7px;
-        margin-right: 1px;
+        margin-left: 20px;
         width: 50px;
     }
 
     #ientrar {
-
         display: flex;
         justify-content: center;
 
-        margin-top: 20px;
-        width: 100%;
+        margin-top: 40px;
+        width: 48%;
         height: 40px;
         
         text-align: center;
@@ -164,7 +159,7 @@
         justify-content: center;
 
         margin-top: 10px;
-        width: 100%;
+        width: 48%;
         height: 40px;
 
         border-radius: 8px;
